@@ -8,7 +8,7 @@ def memerizer(name, text, colour):
     print(width, height)
     font_type = ImageFont.truetype("Arial.ttf",36)
     draw = ImageDraw.Draw(image)
-    if len(text)> 18:
+    if len(text)> 24:
         split = textwrap.wrap(text, 24)    
         draw.text(xy=(10,10),text=split[0],fill=(colour),font=font_type)
         draw.text(xy=(12,12),text=split[0],fill=(0,0,0),font=font_type)
